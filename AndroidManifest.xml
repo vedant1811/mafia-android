@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vedant.mafia"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.vedant.mafia.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vedant.mafia.HostActivity"
+            android:label="@string/title_activity_host"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.vedant.mafia.PerformActionActivity"
+            android:label="@string/title_activity_multi_player"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.vedant.mafia.NextPersonActivity"
+            android:label="@string/title_activity_next_person"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.vedant.mafia.RoundEndsActivity"
+            android:label="@string/title_activity_round_ends"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.vedant.mafia.GameEndsActivity"
+            android:label="@string/title_activity_game_ends" >
+        </activity>
+    </application>
+
+</manifest>
